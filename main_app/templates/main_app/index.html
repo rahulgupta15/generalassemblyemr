@@ -8,9 +8,9 @@
     <h1>Welcome To The Doctor Patient Portal</h1>
     <ul>
     {% if user.is_authenticated %}
-      {% if user.role.name == 'Doctor'}
+      {% if user.role.name == 'Doctor' %}
       <h2>Your Name is Dr. {{ user.username }}</h2>
-      {% elseif user.role.name == 'Patient' %}
+      {% elif user.role.name == 'Patient' %}
       <h2>Your Name is {{ user.username }}</h2>
       {% endif %}
     <a href="{% url 'logout' %}">Logout</a>
