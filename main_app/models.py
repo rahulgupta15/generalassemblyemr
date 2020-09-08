@@ -10,7 +10,6 @@ class DoctorUserProfile(models.Model):
         ('Female', 'Female'),
         ('Rather Not Say', 'Rather Not Say')
     ]
-    type = 'Doctor'
     gender = models.CharField(max_length=15, choices = gender_of_user)
     education = models.CharField(max_length=150)
 
@@ -42,6 +41,7 @@ class PatientUserProfile(models.Model):
     def __str__(self):
         return f'{self.user}'
 
+
 class Proscriptions(models.Model):
   patient = models.ForeignKey(PatientUserProfile,on_delete=models.CASCADE)
   proscribed = models.DateTimeField()
@@ -60,5 +60,9 @@ class Appointment(models.Model):
   next_appointment = models.DateTimeField()
 
 class Admin(models.Model):
-    doctor = models.ForeignKey(DoctorUserProfile,on_delete=models.CASCADE)
-    patient = models.ForeignKey(PatientUserProfile,on_delete=models.CASCADE)
+  doctor = models.ForeignKey(DoctorUserProfile,on_delete=models.CASCADE)
+  patient = models.ForeignKey(PatientUserProfile,on_delete=models.CASCADE)
+
+class Role(models.Model):
+  user = models.OneToOneField(User, on_delete = models.CASCADE)
+  name = models.CharField(max_length=10)
