@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
 from .forms import ExtendedUserCreationForm, DoctorUserProfileForm, PatientUserProfileForm
+from .models import Role
 # Create your views here.
 
 def index(request):
@@ -16,8 +17,10 @@ def doctor_register(request):
             user = form.save()
             profile = profile_form.save(commit=False)
             profile.user = user
-
             profile.save()
+            role = Role(name='Doctor')
+            role.user = user
+            role.save()
 
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
@@ -43,8 +46,10 @@ def patient_register(request):
             user = form.save()
             profile = profile_form.save(commit=False)
             profile.user = user
-
             profile.save()
+            role = Role(name='Patient')
+            role.user = user
+            role.save()
 
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
