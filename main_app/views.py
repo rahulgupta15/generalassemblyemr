@@ -60,3 +60,19 @@ def patient_register(request):
     'profile_form' : profile_form
     }
     return render(request, 'registration/patient_register.html', context)
+
+#Doctor log in portal
+def doctor(request):
+  if request.method =='GET':
+    try:
+      return render(request, 'doctor/doctor.html')
+    except Exception as e:
+      return HttpResponse({e})
+
+#Doctor profile portal
+def doctors_profile(request):
+  return render(request, 'doctor/profile.html')
+
+#Doctor schedule
+def doctors_schedule(request):
+  return render(request, 'doctor/schedule.html')

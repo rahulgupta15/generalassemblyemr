@@ -77,7 +77,10 @@ WSGI_APPLICATION = 'gaemr.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'emr',
+        'NAME':'testyBoys',
+        'USER' : 'postgres',
+        'PASSWORD' : 'asdasd',
+        'HOST' : 'localhost'
     }
 }
 
