@@ -10,7 +10,6 @@ class DoctorUserProfile(models.Model):
         ('Female', 'Female'),
         ('Rather Not Say', 'Rather Not Say')
     ]
-    type = 'Doctor'
     gender = models.CharField(max_length=15, choices = gender_of_user)
     education = models.CharField(max_length=150)
 
@@ -30,3 +29,7 @@ class PatientUserProfile(models.Model):
 
     def __str__(self):
         return f'{self.user}'
+
+class Role(models.Model):
+    user = models.OneToOneField(User, on_delete = models.CASCADE)
+    name = models.CharField(max_length=10)
