@@ -37,7 +37,7 @@ class PatientUserProfile(models.Model):
     #emergency_number = models.IntegerField()
     #Appointment History - in progress
     doctor = models.ForeignKey(DoctorUserProfile, on_delete=models.CASCADE)
-    
+
     def __str__(self):
         return f'{self.user}'
 
@@ -59,9 +59,9 @@ class Appointment(models.Model):
   date = models.DateTimeField()
   next_appointment = models.DateTimeField()
 
-class Admin(models.Model):
+class DoctorPatient(models.Model):
   doctor = models.ForeignKey(DoctorUserProfile,on_delete=models.CASCADE)
-  patient = models.ForeignKey(PatientUserProfile,on_delete=models.CASCADE)
+  patient = models.OneToOneField(PatientUserProfile,on_delete=models.CASCADE)
 
 class Role(models.Model):
   user = models.OneToOneField(User, on_delete = models.CASCADE)
