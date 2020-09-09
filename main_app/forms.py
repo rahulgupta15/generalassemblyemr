@@ -32,4 +32,4 @@ class DoctorUserProfileForm(forms.ModelForm):
 class PatientUserProfileForm(forms.ModelForm):
     class Meta:
         model = PatientUserProfile
-        fields = ('gender','doctor')
+        fields = ('gender',)
