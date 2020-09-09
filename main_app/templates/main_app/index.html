@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/login_style.css' %}">
   </head>
-  <body>
+  <body class="loginpage">
     <h1>Welcome To The Doctor Patient Portal</h1>
     <ul>
+      <img class="hermes" src="{% static "assets/tc.png" %}" alt="Staff of hermes">
     {% if user.is_authenticated %}
       {% if user.role.name == 'Doctor' %}
       <h2>Your Name is Dr. {{ user.username }}</h2>
