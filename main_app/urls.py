@@ -16,4 +16,6 @@ urlpatterns = [
     #Doctor schedule page
     path('doctor/schedule/',views.doctors_schedule, name = 'dschedule'),
 
+    #Doctor view of patient profile
+    path('doctor/patient/<int:patient_id>', views.doctorpatient, name='doctorpatient'),
 ]

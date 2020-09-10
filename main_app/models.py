@@ -36,7 +36,6 @@ class PatientUserProfile(models.Model):
     #emergency_relation = models.CharField(max_length=15)
     #emergency_number = models.IntegerField()
     #Appointment History - in progress
-    doctor = models.ForeignKey(DoctorUserProfile, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.user}'
@@ -66,3 +65,10 @@ class DoctorPatient(models.Model):
 class Role(models.Model):
   user = models.OneToOneField(User, on_delete = models.CASCADE)
   name = models.CharField(max_length=10)
+
+class PatientNote(models.Model):
+    patient = models.ForeignKey(User, on_delete=models.CASCADE)
+    note = models.TextField(max_length=500)
+
+    def __str__(self):
+        return f'{self.note}'

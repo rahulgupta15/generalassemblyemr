@@ -10,27 +10,27 @@
     <h1>General Assembly Electronic Medical Records</h1>
     <ul>
       <img class="hermes" src="{% static "assets/tc.png" %}" alt="Staff of hermes">
-    {% if user.is_authenticated %}
-      {% if user.role.name == 'Doctor' %}
-      <h2>Welcome Dr. {{ user.last_name }}</h2>
-      <ul>
-        <li>{{ user.email }}</li>
-        <li>{{ user.first_name }}</li>
-        <li>{{ user.last_name }}</li>
-      </ul>
-      <h2>Patients</h2>
-      <ul>
-        {% for patient in user.doctoruserprofile.doctorpatient_set.all %}
-        <li> {{ patient.patient.user.username }} </li>
-        {% endfor %}
-      </ul>
-      {% elif user.role.name == 'Patient' %}
-      <h2> Welcome {{ user.first_name }}</h2>
+      {% if user.is_authenticated %}
+        {% if user.role.name == 'Doctor' %}
+        <h2>Welcome Dr. {{ user.last_name }}</h2>
+        <ul>
+          <li>{{ user.email }}</li>
+          <li>{{ user.first_name }}</li>
+          <li>{{ user.last_name }}</li>
+        </ul>
+        <h2>Patients</h2>
+        <ul>
+          {% for patient in user.doctoruserprofile.doctorpatient_set.all %}
+          <li> <a href="{% url 'doctorpatient' patient.patient.user.id %}">{{ patient.patient.user.username }}</a> </li>
+          {% endfor %}
+        </ul>
+        {% elif user.role.name == 'Patient' %}
+        <h2> Welcome {{ user.first_name }}</h2>
+        {% endif %}
+      <a href="{% url 'logout' %}">Logout</a>
+      {% else %}
+      <h2>You are not logged in</h2>
+      <a href="{% url 'login' %}">Login</a>
       {% endif %}
-    <a href="{% url 'logout' %}">Logout</a>
-    {% else %}
-    <h2>You are not logged in</h2>
-    <a href="{% url 'login' %}">Login</a>
-    {% endif %}
   </body>
 </html>
