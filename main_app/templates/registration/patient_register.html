@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/register_style.css' %}">
   </head>
-  <body>
+  <body class="register">
     <h1>Patient Registration Page</h1>
     <form action="{% url 'patient_register' %}" method="post">
       {% csrf_token %}
@@ -15,7 +17,7 @@
       {{ form.as_p }}
       {{ profile_form.as_p }}
 
-      <input type="submit" name="" value="Register">
+      <input class="sbmt" type="submit" name="" value="Register">
     </form>
   </body>
 </html>
