@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login
-from .forms import ExtendedUserCreationForm, DoctorUserProfileForm, PatientUserProfileForm
-from .models import Role
+from .forms import ExtendedUserCreationForm, DoctorUserProfileForm, PatientUserProfileForm, PatientNoteForm
+from .models import Role, PatientNote
+from django.contrib.auth.models import User
 # Create your views here.
 
 def index(request):
@@ -65,6 +66,31 @@ def patient_register(request):
     'profile_form' : profile_form
     }
     return render(request, 'registration/patient_register.html', context)
+
+def doctorpatient(request, patient_id):
+    patient = User.objects.get(id=patient_id)
+    notes = PatientNote.objects.filter(patient=patient)
+    # print(PatientNote.objects.filter(patient=patient))
+    if request.method == 'POST':
+        note_Form = PatientNoteForm(request.POST)
+
+        if note_Form.is_valid():
+            note = note_Form.save(commit=False)
+            note.patient = patient
+            note.save()
+
+            return redirect('doctorpatient', patient_id)
+    else:
+        note_Form = PatientNoteForm()
+
+
+
+    context = {
+        'patient':patient,
+        'note_Form':note_Form,
+        'notes':notes,
+    }
+    return render(request, 'main_app/doctorpatient.html', context)
 
 #Doctor log in portal
 def doctor(request):

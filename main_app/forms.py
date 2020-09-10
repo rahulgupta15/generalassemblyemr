@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import DoctorUserProfile, PatientUserProfile
+from .models import DoctorUserProfile, PatientUserProfile, PatientNote
 
 class ExtendedUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -33,3 +33,8 @@ class PatientUserProfileForm(forms.ModelForm):
     class Meta:
         model = PatientUserProfile
         fields = ('gender',)
+
+class PatientNoteForm(forms.ModelForm):
+    class Meta:
+        model = PatientNote
+        fields = ('note',)
