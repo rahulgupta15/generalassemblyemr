@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/signup_style.css' %}">
   </head>
-  <body>
+  <body class="signup">
+    <h1>General Assembly Electronic Medical Records</h1>
     {% if form.errors %}
     <p>There is something wrong with what you entered!</p>
     {% endif %}
@@ -14,13 +17,14 @@
     {% endif %}
 
     <form  action="{% url 'login' %}" method="post">
+      <img class="hermes" src="{% static "assets/tc.png" %}" alt="Staff of hermes">
       {% csrf_token %}
-      <h4>username</h4>
+      <h4>Username</h4>
       {{ form.username }}
-      <h4>password</h4>
+      <h4>Password</h4>
       {{ form.password }}
-
-      <input type="submit" name="" value="login">
+      <br>
+      <input class="sbmt" type="submit" name="" value="login">
       <br>
       <a href="{% url 'doctor_register' %}">Register as Doctor</a>
       <br>
