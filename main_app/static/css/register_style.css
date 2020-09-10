@@ -1,0 +1,51 @@
+.register {
+  background-color: #d7d0c8;
+}
+
+.register h1 {
+  position: relative;
+  width: 1400px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f87666;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.register form {
+  position: absolute;
+  width: 1400px;
+  height: 700px;
+  top: 95px;
+  left: 20px;
+  background: #95a78d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.sbmt {
+  font-size: 20px;
+  width: 30%;
+  text-decoration: none;
+  border: 2px #95a78d solid;
+  padding: 10px 40px 10px 40px;
+  border-radius: 50px;
+  color: black;
+  background-color: #c8c6af;
+  margin-left: 100px;
+
+}
+
+.register p{
+    margin-left: 100px;
+    font-size: 17px;
+}
+.register li{
+    margin-left: 100px;
+    font-size: 17px;
+}
