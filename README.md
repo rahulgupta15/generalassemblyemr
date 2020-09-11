@@ -1,5 +1,6 @@
-# generalassemblyemr
-GA team project
+# GeneralAssemblyEMR
+
+This is a team project conducted in accordance with the software engineering immersive program at General Assembley.
 
 # Description
 
@@ -68,5 +69,17 @@ An attempt to access views without a succesful login will result in this view.
 ![Imgur Image](https://i.imgur.com/rP9o1hU.png)
 
 # Credits
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Gupta</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=juliangruber" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
 # License
