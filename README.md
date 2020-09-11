@@ -37,6 +37,14 @@ python3 manage.py runserver
 
 # Useage
 
+### For Patients
+
+
+### For Doctors
+
+
+### For Clerical Staff
+
 # Credits
 
 # License
