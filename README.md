@@ -39,6 +39,14 @@ python3 manage.py runserver
 
 ![Imgur Image](https://i.imgur.com/8fyC0ny.png)
 
+![Imgur Image](https://i.imgur.com/H8PTERN.png)
+
+![Imgur Image](https://i.imgur.com/JTMYI9O.png)
+
+![Imgur Image](https://i.imgur.com/FWneyt8.png)
+
+![Imgur Image](https://i.imgur.com/rP9o1hU.png)
+
 # Credits
 
 # License
