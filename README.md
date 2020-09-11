@@ -77,7 +77,7 @@ An attempt to access views without a succesful login will result in this view.
   <tr>
     <td align="center"><img src="https://avatars1.githubusercontent.com/u/56042331?s=400&u=9fc6357e253773f8eb9c8c717d8668d3971164a4&v=4" width="100px;" alt=""/><br /><sub><b>Rahul Gupta</b></sub></a><br /><a href="https://github.com/rahulgupta15" title="Code">💻</a></td>
     <td align="center"><img src="https://avatars1.githubusercontent.com/u/63525891?s=400&v=4" width="100px;" alt=""/><br /><sub><b>Ahmed Jamal</b></sub></a><br /><a href="https://github.com/AhmedJamal93" title="Code">💻</a></td>
-    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://i.imgur.com/AciEwUR.jpg" width="100px;" alt=""/><br /><sub><b>Noah Eror</b></sub></a><br /><a href="https://github.com/BitterHippo" title="Code">💻</a></td>
+    <td align="center"><img src="https://i.imgur.com/AciEwUR.jpg" width="100px;" alt=""/><br /><sub><b>Noah Eror</b></sub></a><br /><a href="https://github.com/BitterHippo" title="Code">💻</a></td>
   </tr>
 </table>
 
