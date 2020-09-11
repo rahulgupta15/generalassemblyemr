@@ -43,11 +43,19 @@ If you do not already have an active account, specficy which account type you wo
 
 ![Imgur Image](https://i.imgur.com/8fyC0ny.png)
 
+### Account Creation Portal
+
 ![Imgur Image](https://i.imgur.com/H8PTERN.png)
+
+### Doctor Profile View
+
+![Imgur Image](https://i.imgur.com/FWneyt8.png)
+
+### Patient Profile View
 
 ![Imgur Image](https://i.imgur.com/JTMYI9O.png)
 
-![Imgur Image](https://i.imgur.com/FWneyt8.png)
+### Incorrect Login Profile
 
 ![Imgur Image](https://i.imgur.com/rP9o1hU.png)
 
