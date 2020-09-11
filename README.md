@@ -37,7 +37,7 @@ python3 manage.py runserver
 
 # Useage
 
-![Imgur Image](https://i.imgur.com/AciEwUR.jpg)
+![Imgur Image][Imgur](https://i.imgur.com/8fyC0ny.png)
 
 # Credits
 
