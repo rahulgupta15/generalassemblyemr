@@ -8,7 +8,7 @@
   </head>
   <body class="loginpage">
     <h1>General Assembly Electronic Medical Records</h1>
-    <ul>
+    <div>
       <img class="hermes" src="{% static "assets/tc.png" %}" alt="Staff of hermes">
       {% if user.is_authenticated %}
         {% if user.role.name == 'Doctor' %}
@@ -32,5 +32,6 @@
       <h2>You are not logged in</h2>
       <a href="{% url 'login' %}">Login</a>
       {% endif %}
+    </div>
   </body>
 </html>
