@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 absl-py==0.9.0
 appdirs==1.4.4
 appnope==0.1.0
@@ -133,4 +132,3 @@ toml==0.10.1
 urllib3==1.25.10
 whitenoise==5.2.0
 wrapt==1.12.1
->>>>>>> e0b4823be95c21921a72f41b12fb16ea055839a7
