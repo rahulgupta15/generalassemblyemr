@@ -7,7 +7,7 @@ GeneralAsemblyEMR is a dual-purpose application made to enable medical staff wit
 
 # Installation
 
-For non-Windows:
+### For non-Windows users:
 
 ```
 git clone https://github.com/rahulgupta15/generalassemblyemr
@@ -18,7 +18,7 @@ python3 manage.py runserver
 
 ```
 
-For Windows users:
+### For Windows users:
 
 ```
 git clone https://github.com/rahulgupta15/generalassemblyemr
