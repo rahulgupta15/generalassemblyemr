@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/dr_patient_style.css' %}">
   </head>
-  <body>
+  <body class="drpt">
+    <h1>General Assembly Electronic Medical Records</h1>
+    <div class="main">
     <h2>{{patient.last_name}}, {{patient.first_name}}</h2>
     <ul>
       <li>Addresss: {{ patient.patientuserprofile.address }} </li>
@@ -21,7 +25,7 @@
       <li>Emergency Relationship: {{ patient.patientuserprofile.emergency_relation}}</li>
       <li>Emergency Number: {{ patient.patientuserprofile.emergency_number}}</li>
     </ul>
-    <h2>Notes</h2>
+    <h3>Notes</h3>
     <ul>
       {% if notes|length > 0 %}
         {% for note in notes %}
@@ -40,7 +44,7 @@
 
       {{ note_Form.as_p }}
 
-      <input type="submit" name="" value="submit">
+      <input class="sbmt" type="submit" name="" value="submit">
       </form>
       <br>
       <br>
@@ -48,6 +52,6 @@
       <br>
       <br>
       <a href="{% url 'logout' %}">Logout</a>
-
+    </div>
   </body>
 </html>

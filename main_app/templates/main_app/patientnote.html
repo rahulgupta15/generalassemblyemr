@@ -3,13 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/pt_notes_style.css' %}">
   </head>
-  <body>
+  <body class="notes">
+    <h1>General Assembly Electronic Medical Records</h1>
+    <div class='main'>
     <h2>Patient: {{ patient }}</h2>
     <h3>{{ note.dt }}</h3>
     <h3>Note:</h3>
     <p>{{ note }}</p>
 
     <a href="{% url 'doctorpatient' patient.id %}">Back to Patient Profile</a>
+  </div>
   </body>
 </html>
