@@ -43,19 +43,27 @@ If you do not already have an active account, specficy which account type you wo
 
 ![Imgur Image](https://i.imgur.com/8fyC0ny.png)
 
-### Account Creation Portal
+### Account Registration Portal
+
+Complete a multiple-field form in order to register account. Following a succesful registration, you will immediately be redirect to the appropriate view.
 
 ![Imgur Image](https://i.imgur.com/H8PTERN.png)
 
 ### Doctor Profile View
 
+Upon a succesful login from a 'doctor' account you will be greeted with the following view.
+
 ![Imgur Image](https://i.imgur.com/FWneyt8.png)
 
 ### Patient Profile View
 
+Upon a succesful login from a 'patient' account you will be greeted with the following view.
+
 ![Imgur Image](https://i.imgur.com/JTMYI9O.png)
 
-### Incorrect Login Profile
+### Not Logged-in View
+
+An attempt to access views without a succesful login will result in this view.
 
 ![Imgur Image](https://i.imgur.com/rP9o1hU.png)
 
