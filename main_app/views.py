@@ -9,6 +9,9 @@ from django.contrib.auth.models import User
 def index(request):
     return render(request, 'main_app/index.html')
 
+def admin(request):
+    return redirect('/admin')
+
 def doctor_register(request):
     if request.method == 'POST':
         form = ExtendedUserCreationForm(request.POST)
@@ -91,6 +94,21 @@ def doctorpatient(request, patient_id):
         'notes':notes,
     }
     return render(request, 'main_app/doctorpatient.html', context)
+
+def patientdoctor(request, doctor_id):
+    doctor = User.objects.get(id=doctor_id)
+    return render(request, 'main_app/patientdoctor.html', {'doctor':doctor})
+
+def patientnote(request, patient_id, note_id):
+    patient = User.objects.get(id=patient_id)
+    note = PatientNote.objects.get(id=note_id)
+    # print(note)
+    context = {
+        'patient':patient,
+        'note':note
+    }
+    return render(request, 'main_app/patientnote.html', context)
+
 
 #Doctor log in portal
 def doctor(request):

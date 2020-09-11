@@ -11,27 +11,53 @@
     <div>
       <img class="hermes" src="{% static "assets/dr.jpg" %}" alt="Staff of hermes">
       {% if user.is_authenticated %}
-        {% if user.role.name == 'Doctor' %}
-        <h2>Welcome Dr. {{ user.last_name }}</h2>
-        <ul>
-          <li>{{ user.email }}</li>
-          <li>{{ user.first_name }}</li>
-          <li>{{ user.last_name }}</li>
-        </ul>
-        <h2>Patients</h2>
-        <ul>
-          {% for patient in user.doctoruserprofile.doctorpatient_set.all %}
-          <li class="patients"> <a href="{% url 'doctorpatient' patient.patient.user.id %}">{{ patient.patient.user.username }}</a> </li>
-          {% endfor %}
-        </ul>
+      {% if user.role.name == 'Doctor' %}
+      <h2>Welcome Dr. {{ user.first_name}} {{ user.last_name }}</h2>
+      <ul>
+        <li>{{ user.email }}</li>
+        <li>Phone Number: {{user.doctoruserprofile.phone_number}}</li>
+        <li>Sex: {{ user.doctoruserprofile.gender}}</li>
+        <li>Education: {{ user.doctoruserprofile.education}}</li>
+      </ul>
+      <h2>Patients</h2>
+      <ul>
+        {% for patient in user.doctoruserprofile.doctorpatient_set.all %}
+        <li> <a href="{% url 'doctorpatient' patient.patient.user.id %}">{{ patient.patient.user.username }}</a> </li>
+        {% endfor %}
+      </ul>
+
+
         {% elif user.role.name == 'Patient' %}
-        <h2> Welcome {{ user.first_name }}</h2>
-        {% endif %}
-      <a class='logout' href="{% url 'logout' %}">Logout</a>
-      {% else %}
-      <h2>You are not logged in</h2>
-      <a class='login' href="{% url 'login' %}">Login</a>
+        <h2> Welcome {{ user.first_name }} {{user.last_name}}</h2>
+      <ul>
+        <li>Addresss: {{ user.patientuserprofile.address }} </li>
+        <li>Date of Birth: {{ user.patientuserprofile.date_of_birth }}</li>
+        <li>Email: {{ user.email }}</li>
+        <li>Phone Number: {{user.patientuserprofile.phone_number}}</li>
+        <li>Height(cm): {{ user.patientuserprofile.height }}</li>
+        <li>Weight(kg): {{ user.patientuserprofile.weight }}</li>
+        <li>Sex: {{ user.patientuserprofile.gender}}</li>
+      </ul>
+      <h3>Emergency Details</h3>
+      <ul>
+        <li>Emergency Contact: {{ user.patientuserprofile.emergency_contact}}</li>
+        <li>Emergency Relationship: {{ user.patientuserprofile.emergency_relation}}</li>
+        <li>Emergency Number: {{ user.patientuserprofile.emergency_number}}</li>
+      </ul>
+      <h3>Doctor</h3>
+      <ul>
+        {% for doctor in user.patientuserprofile.doctorpatient_set.all %}
+        <li> <a href="{% url 'patientdoctor' doctor.doctor.user.id %}">{{ doctor.doctor.user.username }}</a> </li>
+        {% endfor %}
+      </ul>
+
       {% endif %}
-    </div>
+
+<!-- Both Views -->
+    <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+    <h2>You are not logged in</h2>
+    <a href="{% url 'login' %}">Login</a>
+    {% endif %}
   </body>
 </html>

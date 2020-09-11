@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3>Dr. {{doctor.first_name}} {{doctor.last_name}}</h3>
+    <ul>
+      <li>{{ doctor.email }}</li>
+      <li>Phone Number: {{doctor.doctoruserprofile.phone_number}}</li>
+      <li>Sex: {{ doctor.doctoruserprofile.gender}}</li>
+      <li>Education: {{ doctor.doctoruserprofile.education}}</li>
+    </ul>
+    <h3>Prescriptions</h3>
+    <ul>
+      <li>Will add prescription details here</li>
+      <li>Will add prescription details here</li>
+      <li>Will add prescription details here</li>
+    </ul>
+    <h3>Notes</h3>
+    <ul>
+      <li>Add Notes Here</li>
+      <li>Add Notes Here</li>
+      <li>Add Notes Here</li>
+    </ul>
+    <br>
+    <a href="{% url 'index' %}">Back to My Profile</a>
+    <br>
+    <br>
+    <a href="{% url 'logout' %}">Logout</a>
+  </body>
+</html>
