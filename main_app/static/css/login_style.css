@@ -1,39 +1,38 @@
 .loginpage {
   background-color: #d7d0c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .loginpage h1 {
-  position: relative;
-  width: 1400px;
+  width: 90%;
   height: 75px;
-  margin-left: auto;
-  margin-right: auto;
   background: #f87666;
   border: 2px solid #000000;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.loginpage ul {
-position: absolute;
-width: 300px;
-height: 700px;
-top: 80px;
-left: 550px;
-background: #95A78D;
+.loginpage div {
+  width: 90%;
+  height: 600px;
+  margin-top: -25px;
+  background: #95a78d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000000;
 }
 
-.loginpage ul h2{
-  position: absolute;
-  top: 300px;
-  left: 65px;
+.loginpage div h2{
+  font-size: 30px;
 }
 
-.loginpage ul a{
-  position: absolute;
-  top: 375px;
-  left: 110px;
+.loginpage div a{
   font-size: 20px;
   text-decoration: none;
   border: 2px #95A78D solid;
@@ -41,12 +40,10 @@ background: #95A78D;
   border-radius: 50px;
   color: black;
   background-color: #C8C6AF;
+  margin-top: 10px;
 }
 
 .loginpage img {
-  position: absolute;
   width: 100px;
-  height: 100px;
-  top: 200px;
-  left: 125px;
+  height: 100px
 }
