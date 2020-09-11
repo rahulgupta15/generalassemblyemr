@@ -39,7 +39,7 @@ python3 manage.py runserver
 
 ### Login Portal
 
-Specify which account type you would like to create.
+If you do not already have an active account, specficy which account type you would like to create.
 
 ![Imgur Image](https://i.imgur.com/8fyC0ny.png)
 
