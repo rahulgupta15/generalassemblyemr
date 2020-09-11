@@ -84,4 +84,3 @@ An attempt to access views without a succesful login will result in this view.
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
 
-# License
