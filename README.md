@@ -76,8 +76,8 @@ An attempt to access views without a succesful login will result in this view.
 <table>
   <tr>
     <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Gupta</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=rahulgupta15" title="Code">💻</a></td>
-    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Gupta</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=rahulgupta15" title="Code">💻</a></td>
-    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Gupta</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=rahulgupta15" title="Code">💻</a></td>
+    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Ahmed Jamal</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=rahulgupta15" title="Code">💻</a></td>
+    <td align="center"><a href="http://twitter.com/juliangruber/"><img src="https://avatars2.githubusercontent.com/u/10247?v=4" width="100px;" alt=""/><br /><sub><b>Noah Eror</b></sub></a><br /><a href="https://github.com/libscie/credit-roll/commits?author=rahulgupta15" title="Code">💻</a></td>
   </tr>
 </table>
 
