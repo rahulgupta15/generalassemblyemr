@@ -7,6 +7,15 @@ GeneralAsemblyEMR is a dual-purpose application made to enable medical staff wit
 
 # Installation
 
+```
+git clone https://github.com/
+cd gaemr
+
+python3 manage.py migrate
+python3 ma
+
+```
+
 # Useage
 
 # Credits
