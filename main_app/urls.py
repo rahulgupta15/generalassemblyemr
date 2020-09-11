@@ -18,4 +18,13 @@ urlpatterns = [
 
     #Doctor view of patient profile
     path('doctor/patient/<int:patient_id>', views.doctorpatient, name='doctorpatient'),
+
+    #Doctor view of # NOTE
+    path('doctor/patient/<int:patient_id>/<int:note_id>', views.patientnote, name='patientnote'),
+
+    #Patient view of Doctor
+    path('patient/doctor/<int:doctor_id>', views.patientdoctor, name='patientdoctor'),
+
+    #Redirect to Admin page
+    path('admin/', views.admin, name='admin'),
 ]

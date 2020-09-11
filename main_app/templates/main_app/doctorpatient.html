@@ -5,19 +5,32 @@
     <title></title>
   </head>
   <body>
-    <h2>Where doctor can see patient profile</h2>
+    <h2>{{patient.last_name}}, {{patient.first_name}}</h2>
     <ul>
-      <li> {{ patient.username }}</li>
+      <li>Addresss: {{ patient.patientuserprofile.address }} </li>
+      <li>Date of Birth: {{ patient.patientuserprofile.date_of_birth }}</li>
+      <li>Email: {{ patient.email }}</li>
+      <li>Phone Number: {{patient.patientuserprofile.phone_number}}</li>
+      <li>Height(cm): {{ patient.patientuserprofile.height }}</li>
+      <li>Weight(kg): {{ patient.patientuserprofile.weight }}</li>
+      <li>Sex: {{ patient.patientuserprofile.gender}}</li>
+    </ul>
+    <h3>Emergency Details</h3>
+    <ul>
+      <li>Emergency Contact: {{ patient.patientuserprofile.emergency_contact}}</li>
+      <li>Emergency Relationship: {{ patient.patientuserprofile.emergency_relation}}</li>
+      <li>Emergency Number: {{ patient.patientuserprofile.emergency_number}}</li>
     </ul>
     <h2>Notes</h2>
     <ul>
       {% if notes|length > 0 %}
         {% for note in notes %}
-          <li>{{ note }}</li>
+          <li><a href="{% url 'patientnote' patient.id note.id  %}">{{ note.dt }}</a></li>
         {% endfor %}
       {% else %}
         <p>There are no notes</p>
       {% endif %}
+    </ul>
 
       <form action="{% url 'doctorpatient' patient.id %}" method="post">
       {% csrf_token %}
@@ -29,7 +42,12 @@
 
       <input type="submit" name="" value="submit">
       </form>
+      <br>
+      <br>
+      <a href="{% url 'index'  %}">Back to My Profile</a>
+      <br>
+      <br>
+      <a href="{% url 'logout' %}">Logout</a>
 
-    </ul>
   </body>
 </html>

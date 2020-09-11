@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Patient: {{ patient }}</h2>
+    <h3>{{ note.dt }}</h3>
+    <h3>Note:</h3>
+    <p>{{ note }}</p>
+
+    <a href="{% url 'doctorpatient' patient.id %}">Back to Patient Profile</a>
+  </body>
+</html>

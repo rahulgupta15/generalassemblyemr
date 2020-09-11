@@ -27,12 +27,12 @@ class DoctorUserProfileForm(forms.ModelForm):
     class Meta:
         model = DoctorUserProfile
         type = 'Doctor'
-        fields = ('gender','education')
+        fields = ('gender','phone_number','education')
 
 class PatientUserProfileForm(forms.ModelForm):
     class Meta:
         model = PatientUserProfile
-        fields = ('gender',)
+        fields = ('gender','date_of_birth','address','phone_number','age','health_card_number','height','weight','emergency_contact','emergency_relation','emergency_number')
 
 class PatientNoteForm(forms.ModelForm):
     class Meta:
