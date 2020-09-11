@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+     <link rel="stylesheet" type="text/css" href="{% static 'css/pt_drview_style.css' %}">
   </head>
-  <body>
-    <h3>Dr. {{doctor.first_name}} {{doctor.last_name}}</h3>
+  <body class="ptdr">
+    <h1>General Assembly Electronic Medical Records</h1>
+    <div class="main">
+    <h2>Dr. {{doctor.first_name}} {{doctor.last_name}}</h2>
     <ul>
       <li>{{ doctor.email }}</li>
       <li>Phone Number: {{doctor.doctoruserprofile.phone_number}}</li>
@@ -29,5 +33,6 @@
     <br>
     <br>
     <a href="{% url 'logout' %}">Logout</a>
+  </div>
   </body>
 </html>

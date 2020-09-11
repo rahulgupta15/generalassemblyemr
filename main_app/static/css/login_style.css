@@ -18,7 +18,7 @@
 
 .loginpage div {
   width: 90%;
-  height: 600px;
+  height: 800px;
   margin-top: -25px;
   background: #95a78d;
   display: flex;
@@ -60,11 +60,11 @@
   border-radius: 100px;
 }
 
-.patients a {
+a {
   text-decoration: none;
   color: black;
 }
 
-.patients a:hover {
+a:hover {
   font-size: 20px;
 }
