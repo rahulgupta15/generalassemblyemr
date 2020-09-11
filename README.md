@@ -37,6 +37,10 @@ python3 manage.py runserver
 
 # Useage
 
+### Login Portal
+
+Specify which account type you would like to create.
+
 ![Imgur Image](https://i.imgur.com/8fyC0ny.png)
 
 ![Imgur Image](https://i.imgur.com/H8PTERN.png)
