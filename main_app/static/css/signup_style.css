@@ -67,3 +67,19 @@ body h1 {
 body p {
   font-size: 20px;
 }
+
+input {
+  background-color: #c8c6af;
+}
+
+.error{
+  color: #f87666;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: bold;
+}
+
+.error2{
+  color: #f87666;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: bold;
+}
