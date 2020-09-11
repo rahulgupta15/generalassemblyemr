@@ -37,13 +37,7 @@ python3 manage.py runserver
 
 # Useage
 
-### For Patients
-
-
-### For Doctors
-
-
-### For Clerical Staff
+![Alt text](http://https://i.imgur.com/AciEwUR.jpg "Login Portal")
 
 # Credits
 
