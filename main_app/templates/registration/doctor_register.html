@@ -9,13 +9,13 @@
   <body class="register">
     <h1>Doctor Registration Page</h1>
     <form action="{% url 'doctor_register' %}" method="post">
-      {% csrf_token %}
-      {% if form.errors %}
-      <p>There are errors in the form</p>
-      {% endif %}
-
       {{ form.as_p }}
       {{ profile_form.as_p }}
+
+      {% csrf_token %}
+      {% if form.errors %}
+      <p class="error">There are errors in the form</p>
+      {% endif %}
 
       <input class="sbmt" type="submit" name="" value="Register">
     </form>

@@ -32,7 +32,18 @@
   font-size: 30px;
 }
 
-.loginpage div a{
+.login{
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px #95A78D solid;
+  padding: 10px 40px 10px 40px;
+  border-radius: 50px;
+  color: black;
+  background-color: #C8C6AF;
+  margin-top: 10px;
+}
+
+.logout{
   font-size: 20px;
   text-decoration: none;
   border: 2px #95A78D solid;
@@ -45,5 +56,15 @@
 
 .loginpage img {
   width: 100px;
-  height: 100px
+  height: 100px;
+  border-radius: 100px;
+}
+
+.patients a {
+  text-decoration: none;
+  color: black;
+}
+
+.patients a:hover {
+  font-size: 20px;
 }
