@@ -21,14 +21,7 @@ class Migration(migrations.Migration):
                 ('patient', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='main_app.patientuserprofile')),
             ],
         ),
-        migrations.CreateModel(
-            name='Role',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=10)),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-            ],
-        ),
+        
         migrations.DeleteModel(
             name='Admin',
         ),
