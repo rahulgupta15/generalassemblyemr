@@ -68,6 +68,35 @@ An attempt to access views without a succesful login will result in this view.
 
 ![Imgur Image](https://i.imgur.com/rP9o1hU.png)
 
+# Future Enhancements 
+
+Currently the UI and much of the functionality of the website is unimplemented or unrefined.
+
+### Functionality - Doctor
+
+* 'Doctor' users are currently unable to delete memos that they attach to patients profiles.
+* Although the schedule functionality exists on in the administration panel, the 'doctor' user is not able to see his schedule.
+
+### Functionality - Patient
+
+* The 'patient' can not access his doctors files.
+* 'Patient' can not see previous appointments.
+* 'Patient' can not access prescriptions.
+*  The API implementation of 'nearest hospital' functionality is inactive.
+
+### Functionality - Admin
+
+* The proscription functionality, as well as the model that mediates that functionality, is currently inaccessible.
+* String overides need to be included to facilitate a more logical understanding of the objects created through the panel.
+
+### UI
+
+* Carosel for background images unimplemeneted
+* Buttons features unimplemeneted
+* Profile view renders information, but the centering is not consistent.
+* Overall, the wireframe submission for the project hasn't yet been implemeneted.
+* There is no navigation bar to enable easy access to views.
+
 # Credits
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
