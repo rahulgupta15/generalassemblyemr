@@ -97,6 +97,16 @@ Currently the UI and much of the functionality of the website is unimplemented o
 * Overall, the wireframe submission for the project hasn't yet been implemeneted.
 * There is no navigation bar to enable easy access to views.
 
+# Required Technologies
+
+The required applications and frameworks are as follows:
+
+| Requirement            | Version                                                                                                              |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `python                | 3.0 or greater                                                                                                       |
+| `django`               | 3.1                                                                                                                  |
+| `bootstrap`            | 4.2                                                                                                                  |
+
 # Credits
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
