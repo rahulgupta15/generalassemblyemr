@@ -6,6 +6,10 @@ This is a team project conducted in accordance with the software engineering imm
 
 GeneralAsemblyEMR is a dual-purpose application made to enable medical staff with easy access to patient records, scheduling, and record information while simultaneiously offering patients access to prescription information, appointment times, and their doctor's emergency contact information. The bifurcated design of user types - doctor and patient - is joined by clerical staff who can, from an administration panel, assign doctors to patients, appointments between doctors and patients, and prescriptions to patients.
 
+# Link to Site
+
+https://gaemr.herokuapp.com/accounts/login/
+
 # Installation
 
 ### For non-Windows users:
